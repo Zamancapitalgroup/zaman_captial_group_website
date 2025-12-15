@@ -1,0 +1,529 @@
+/* ===== INVEST WITH US PAGE STYLES ===== */
+
+/* ===== HERO SECTION ===== */
+.invest-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.invest-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.invest-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(2, 12, 49, 0.85) 0%, rgba(26, 26, 46, 0.85) 100%);
+  z-index: 2;
+}
+
+.invest-hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 0 40px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease 0.3s both;
+}
+
+.invest-hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #f0f4f8;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.invest-hero-subtitle {
+  font-size: 20px;
+  color: rgba(240, 244, 248, 0.9);
+  margin-bottom: 40px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.invest-cta-primary {
+  display: inline-block;
+  padding: 16px 48px;
+  background-color: #00ced1;
+  color: #020c31;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid #00ced1;
+}
+
+.invest-cta-primary:hover {
+  background-color: transparent;
+  color: #00ced1;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 206, 209, 0.3);
+}
+
+/* ===== CONTAINER ===== */
+.invest-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ===== SECTION HEADER ===== */
+.invest-section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.invest-section-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #f0f4f8;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.invest-section-subtitle {
+  font-size: 18px;
+  color: #00ced1;
+  font-weight: 500;
+}
+
+/* ===== PROCESS SECTION ===== */
+.invest-process-section {
+  background-color: #020c31;
+  padding: 100px 0;
+}
+
+.invest-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.invest-process-card {
+  background-color: #1a1a2e;
+  border: 1px solid rgba(0, 206, 209, 0.2);
+  border-radius: 8px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.invest-process-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00ced1, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.invest-process-card:hover {
+  border-color: #00ced1;
+  box-shadow: 0 10px 40px rgba(0, 206, 209, 0.15);
+  transform: translateY(-5px);
+}
+
+.invest-process-card:hover::before {
+  opacity: 1;
+}
+
+.invest-step-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #00ced1;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.invest-step-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-bottom: 15px;
+}
+
+.invest-step-description {
+  font-size: 16px;
+  color: rgba(240, 244, 248, 0.8);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.invest-step-icon {
+  font-size: 24px;
+  color: #00ced1;
+  font-weight: 700;
+}
+
+/* ===== WHY INVEST SECTION ===== */
+.invest-why-section {
+  background-color: #1a1a2e;
+  padding: 100px 0;
+}
+
+.invest-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.invest-benefit-card {
+  background-color: #020c31;
+  border: 1px solid rgba(0, 206, 209, 0.2);
+  border-radius: 8px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.invest-benefit-card:hover {
+  border-color: #00ced1;
+  box-shadow: 0 15px 50px rgba(0, 206, 209, 0.2);
+  transform: translateY(-8px);
+}
+
+.invest-benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #00ced1, rgba(0, 206, 209, 0.5));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.icon-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #020c31;
+}
+
+.invest-benefit-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-bottom: 15px;
+}
+
+.invest-benefit-description {
+  font-size: 16px;
+  color: rgba(240, 244, 248, 0.8);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.invest-benefit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.invest-benefit-list li {
+  font-size: 14px;
+  color: rgba(240, 244, 248, 0.7);
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.invest-benefit-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00ced1;
+  font-weight: 700;
+}
+
+/* ===== INVESTMENT TYPES SECTION ===== */
+.invest-types-section {
+  background-color: #020c31;
+  padding: 100px 0;
+}
+
+.invest-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.invest-type-card {
+  background: linear-gradient(135deg, #1a1a2e 0%, rgba(26, 26, 46, 0.8) 100%);
+  border: 2px solid rgba(0, 206, 209, 0.3);
+  border-radius: 8px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.invest-type-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0, 206, 209, 0.1) 0%, transparent 70%);
+  transition: all 0.3s ease;
+}
+
+.invest-type-card:hover {
+  border-color: #00ced1;
+  box-shadow: 0 20px 60px rgba(0, 206, 209, 0.25);
+  transform: translateY(-10px);
+}
+
+.invest-type-card:hover::before {
+  top: -25%;
+  right: -25%;
+}
+
+.invest-type-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.invest-type-description {
+  font-size: 16px;
+  color: rgba(240, 244, 248, 0.8);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.invest-type-details {
+  background-color: rgba(0, 206, 209, 0.05);
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.invest-type-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 206, 209, 0.1);
+}
+
+.invest-type-item:last-child {
+  border-bottom: none;
+}
+
+.invest-type-label {
+  font-size: 14px;
+  color: rgba(240, 244, 248, 0.7);
+  font-weight: 500;
+}
+
+.invest-type-value {
+  font-size: 16px;
+  color: #00ced1;
+  font-weight: 600;
+}
+
+.invest-type-cta {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #00ced1;
+  color: #020c31;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.invest-type-cta:hover {
+  background-color: #f0f4f8;
+  transform: translateX(5px);
+}
+
+/* ===== REQUIREMENTS SECTION ===== */
+.invest-requirements-section {
+  background-color: #1a1a2e;
+  padding: 100px 0;
+}
+
+.invest-requirements-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.invest-requirements-column {
+  background-color: #020c31;
+  border-left: 4px solid #00ced1;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.invest-requirements-subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f0f4f8;
+  margin-bottom: 25px;
+}
+
+.invest-requirements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.invest-requirements-list li {
+  font-size: 16px;
+  color: rgba(240, 244, 248, 0.8);
+  padding: 15px 0;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.invest-requirements-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #00ced1;
+  font-size: 20px;
+}
+
+/* ===== CTA SECTION ===== */
+.invest-cta-section {
+  background: linear-gradient(135deg, #020c31 0%, #1a1a2e 100%);
+  padding: 100px 0;
+  border-top: 1px solid rgba(0, 206, 209, 0.2);
+}
+
+.invest-cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.invest-cta-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #f0f4f8;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.invest-cta-description {
+  font-size: 18px;
+  color: rgba(240, 244, 248, 0.8);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.invest-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.invest-cta-secondary {
+  display: inline-block;
+  padding: 16px 48px;
+  background-color: transparent;
+  color: #00ced1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #00ced1;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.invest-cta-secondary:hover {
+  background-color: #00ced1;
+  color: #020c31;
+  transform: translateY(-3px);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .invest-hero-title {
+    font-size: 42px;
+  }
+
+  .invest-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .invest-section-title {
+    font-size: 36px;
+  }
+
+  .invest-process-grid,
+  .invest-benefits-grid,
+  .invest-types-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .invest-container {
+    padding: 0 20px;
+  }
+
+  .invest-cta-buttons {
+    flex-direction: column;
+  }
+
+  .invest-cta-primary,
+  .invest-cta-secondary {
+    width: 100%;
+  }
+
+  .invest-requirements-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
