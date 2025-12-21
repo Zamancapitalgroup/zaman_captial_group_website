@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   title: "Zaman Capital Group | Premium Investment Opportunities",
   description:
     "Backed by deep industry expertise, we specialize in multifamily acquisitions, value-add opportunities, and institutional-grade investments.",
+  // --- ADDED CODE START ---
+  icons: {
+    icon: "/images/deals/logo-zaman.jpg",
+  },
+  // --- ADDED CODE END ---
 }
 
 export default function RootLayout({

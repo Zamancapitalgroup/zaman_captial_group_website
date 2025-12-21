@@ -37,13 +37,13 @@ const deals: Deal[] = [
     status: "CURRENT",
     description:
       "This asset acts as a real-life example of our main strategy: purchasing underperforming properties and executing a targeted plan to boost cash flow and create substantial equity.",
-    story: "Acquired: Q2 2023 | 8-Unit Building",
+    story: "Acquired: Q2 2025 | 8-Unit Building",
     plan: "We identified a clear opportunity to capitalize on operational inefficiencies through a hands-on management approach, upgrading units, and professionalizing management.",
     results: "Projected 35% Return on Cost with double-digit annual cash-on-cash returns upon stabilization.",
     details: {
       value: "Undisclosed",
       units: "8",
-      year: "2023",
+      year: "2025",
       type: "Apartment Building",
       irr: "20% (Proj.)",
       hold: "5 Years",
@@ -110,7 +110,7 @@ const deals: Deal[] = [
     id: 4,
     title: "New Iberia, LA",
     location: "Southern Value-Add",
-    image: "/images/deals/New lberia.jpg", 
+    image: "/images/deals/New lberia.png", 
     status: "CURRENT",
     description:
       "A significant value-add acquisition targeting a 22-unit complex. The focus is on immediate cash flow enhancement through professional management implementation and strategic property improvements.",

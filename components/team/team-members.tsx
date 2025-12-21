@@ -45,7 +45,7 @@ export default function TeamMembers() {
     },
     {
       name: "Areeb Uzzaman",
-      role: "Acquisitions, Growth and Strategy",
+      role: "Operations, Growth and Strategy",
       // FIXED: Added %20 to handle the space in "team 3"
       image: "/images/deals/team 3.jpg",
       longBio: [

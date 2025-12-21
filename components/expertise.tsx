@@ -32,7 +32,7 @@ export default function Expertise() {
 
   const expertise = [
     { title: "Portfolio Value", stat: 2, suffix: "M+" },
-    { title: "Active Investments", stat: 33, suffix: "+" },
+    { title: "Active Investments", stat: 33, suffix: "+ Units" },
     { title: "Occupancy Rate", stat: 90, suffix: "%+" },
   ]
 
