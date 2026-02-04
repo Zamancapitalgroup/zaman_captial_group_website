@@ -43,18 +43,6 @@ export default function TeamMembers() {
       expertise: ["Acquisitions", "Deal Sourcing", "Investor Strategy", "Portfolio Growth"],
       linkedin: "https://www.linkedin.com/in/nashrazaman/",
     },
-    {
-      name: "Areeb Uzzaman",
-      role: "Operations, Growth and Strategy",
-      // FIXED: Added %20 to handle the space in "team 3"
-      image: "/images/deals/team 3.jpg",
-      longBio: [
-        "As the Operations Lead at Zaman Capital Group, Areeb orchestrates the internal infrastructure that drives the firm's investment strategy and portfolio growth. He partners with the principals to identify and execute value-add multifamily opportunities providing the analytical foundation for every acquisition. Currently pursuing a Master of Public Affairs from Brown University, Areeb brings a sophisticated, research-based, and long-term perspective to the team.",
-        "He supports the due diligence process with rigorous accuracy, ensuring smooth transactions from the initial offer to closing.",
-      ],
-      expertise: ["Operations", "Technology", "Due Diligence", "Investor Relations"],
-      linkedin: "https://linkedin.com",
-    },
   ]
 
   return (
