@@ -53,19 +53,27 @@ export default function Footer() {
 
           {/* Column 3: Contact */}
           <div className="text-center md:text-left">
-            <h4 className="text-platinum font-bold mb-8 font-playfair">Contact</h4>
-            <ul className="flex flex-col gap-4 text-sm">
-              <li>
-                <a
-                  href="mailto:partners@zamancapitalgroup.com"
-                  className="text-text-secondary hover:text-[#d4af37] font-inter transition block"
-                >
-                  partners@zamancapitalgroup.com
-                </a>
-              </li>
-               
-            </ul>
-          </div>
+  <h4 className="text-platinum font-bold mb-8 font-playfair">Contact</h4>
+  <ul className="flex flex-col gap-4 text-sm">
+    <li>
+      <a
+        href="mailto:partners@zamancapitalgroup.com"
+        className="text-text-secondary hover:text-[#d4af37] font-inter transition block"
+      >
+        partners@zamancapitalgroup.com
+      </a>
+    </li>
+    {/* New Phone Number Section */}
+    <li>
+      <a
+        href="tel:410-946-6028"
+        className="text-text-secondary hover:text-[#d4af37] font-inter transition block"
+      >
+        410-946-6028
+      </a>
+    </li>
+  </ul>
+</div>
 
           {/* Column 4: Follow Us */}
           <div className="text-center md:text-left">

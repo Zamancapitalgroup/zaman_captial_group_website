@@ -27,7 +27,7 @@ export default function Hero() {
             Building Generational Wealth Through Multifamily Real Estate
           </h1>
           <p className="text-[#d4af37] text-xl md:text-2xl font-light tracking-widest">
-            ━━━ CAPITAL. GROWTH. LEGACY. ━━━
+            CAPITAL. GROWTH. LEGACY.
           </p>
         </div>
 

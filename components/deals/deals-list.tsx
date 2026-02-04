@@ -114,13 +114,13 @@ const deals: Deal[] = [
     status: "CURRENT",
     description:
       "A significant value-add acquisition targeting a 22-unit complex. The focus is on immediate cash flow enhancement through professional management implementation and strategic property improvements.",
-    story: "Acquired: 2025 | 22-Unit Complex",
+    story: "Acquired: 2026 | 22-Unit Complex",
     plan: "Implement professional third-party management to streamline operations, address deferred maintenance, and execute cosmetic upgrades to increase market rents.",
     results: "Targeting 40% Cash-on-Cash return.",
     details: {
       value: "Value-Add",
       units: "22",
-      year: "2025",
+      year: "2026",
       type: "Multi-Family",
       irr: "20%+ (Proj.)",
       hold: "5-7 Years",

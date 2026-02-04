@@ -32,7 +32,8 @@ export default function Expertise() {
 
   const expertise = [
     { title: "Portfolio Value", stat: 2, suffix: "M+" },
-    { title: "Active Investments", stat: 33, suffix: "+ Units" },
+    // Separated the "+" and the label "Units"
+    { title: "Active Investments", stat: 33, suffix: "+", label: "Units" },
     { title: "Occupancy Rate", stat: 90, suffix: "%+" },
   ]
 
@@ -43,9 +44,17 @@ export default function Expertise() {
           {expertise.map((item, idx) => (
             <ScrollFadeIn key={idx} delay={idx * 100}>
               <div className="text-center" onMouseEnter={() => setIsVisible(true)}>
-                <div className="text-5xl md:text-6xl font-bold gradient-text mb-4">
-                  {isVisible ? <CountUp target={item.stat} /> : item.stat}
-                  <span>{item.suffix}</span>
+                <div className="text-5xl md:text-6xl font-bold mb-4">
+                  {/* The number and suffix (+, M+, etc.) stay in Gold */}
+                  <span className="gradient-text">
+                    {isVisible ? <CountUp target={item.stat} /> : item.stat}
+                    {item.suffix}
+                  </span>
+                  
+                  {/* If a label like "Units" exists, render it in White */}
+                  {item.label && (
+                    <span className="text-white ml-2">{item.label}</span>
+                  )}
                 </div>
                 <p className="text-text-secondary text-lg">{item.title}</p>
               </div>
