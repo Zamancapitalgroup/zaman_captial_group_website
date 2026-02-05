@@ -11,7 +11,6 @@ interface Deal {
   title: string
   location: string
   image: string
-  status: "CURRENT" | "FULLY_FUNDED" | "EXITED" | "STABILIZED"
   description: string
   story: string
   plan: string
@@ -34,7 +33,6 @@ const deals: Deal[] = [
     title: "Clarion, PA",
     location: "North-east Value-Add",
     image: "/images/deals/clarion image.avif",
-    status: "CURRENT",
     description:
       "This asset acts as a real-life example of our main strategy: purchasing underperforming properties and executing a targeted plan to boost cash flow and create substantial equity.",
     story: "Acquired: Q2 2025 | 8-Unit Building",
@@ -59,7 +57,6 @@ const deals: Deal[] = [
     title: "Catonsville, MD",
     location: "Suburban Repositioning",
     image: "/images/deals/catonsville image.avif",
-    status: "STABILIZED",
     description:
       "Repositioning prime-location asset to a lucrative premium 2-unit duplex delivering strong appreciations and returns.",
     story: "Acquired: 2021 | Converted from 8 rooms",
@@ -85,7 +82,6 @@ const deals: Deal[] = [
     title: "Ocean City, MD",
     location: "Resort Market",
     image: "/images/deals/ocean city image.avif",
-    status: "STABILIZED",
     description:
       "An opportunistic investment in a unique, high-demand market, capitalizing on both substantial market growth and robust rental income.",
     story: "Acquired: 2021 | Resort Condominium",
@@ -111,7 +107,6 @@ const deals: Deal[] = [
     title: "New Iberia, LA",
     location: "Southern Value-Add",
     image: "/images/deals/New lberia.png", 
-    status: "CURRENT",
     description:
       "A significant value-add acquisition targeting a 22-unit complex. The focus is on immediate cash flow enhancement through professional management implementation and strategic property improvements.",
     story: "Acquired: 2026 | 22-Unit Complex",
@@ -138,12 +133,6 @@ const deals: Deal[] = [
 export default function DealsList() {
   const [selectedDeal, setSelectedDeal] = useState<Deal>(deals[0])
 
-  const statusColors = {
-    CURRENT: "bg-blue-500/20 text-blue-300 border-blue-500/50",
-    FULLY_FUNDED: "bg-amber-500/20 text-amber-300 border-amber-500/50",
-    EXITED: "bg-green-500/20 text-green-300 border-green-500/50",
-    STABILIZED: "bg-purple-500/20 text-purple-300 border-purple-500/50",
-  }
 
   return (
     <section className="section section-dark">
@@ -161,13 +150,7 @@ export default function DealsList() {
                   : "border-[#d4af37]/30 hover:border-[#d4af37]/60 bg-black/40"
               }`}
             >
-              <div
-                className={`absolute -top-3 right-4 px-3 py-1 rounded-full text-xs font-bold border uppercase tracking-wider ${
-                  statusColors[deal.status] || "bg-gray-500/20 text-gray-300 border-gray-500/50"
-                }`}
-              >
-                {deal.status.replace("_", " ")}
-              </div>
+               
               <div className="font-playfair text-xl font-bold text-platinum mb-2">
                 {deal.title}
               </div>

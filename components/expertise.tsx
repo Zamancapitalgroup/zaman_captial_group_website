@@ -33,7 +33,7 @@ export default function Expertise() {
   const expertise = [
     { title: "Portfolio Value", stat: 2, suffix: "M+" },
     // Separated the "+" and the label "Units"
-    { title: "Active Investments", stat: 33, suffix: "+", label: "Units" },
+    { title: "Units", stat: 33, suffix: "+", },
     { title: "Occupancy Rate", stat: 90, suffix: "%+" },
   ]
 
@@ -50,11 +50,6 @@ export default function Expertise() {
                     {isVisible ? <CountUp target={item.stat} /> : item.stat}
                     {item.suffix}
                   </span>
-                  
-                  {/* If a label like "Units" exists, render it in White */}
-                  {item.label && (
-                    <span className="text-white ml-2">{item.label}</span>
-                  )}
                 </div>
                 <p className="text-text-secondary text-lg">{item.title}</p>
               </div>
